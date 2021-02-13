@@ -74,7 +74,7 @@ score = score + Math.round(getFrameRate() / 60);
   {
     moonbg.x = moonbg.width
   }
-  if (astronaut.isTouching(invisibleBlock) ||touches.length >0 ||keyDown("space") && astronaut.y >= 100) 
+  if (astronaut.isTouching(invisibleBlock) ||keyDown("up") && astronaut.y >= 100) 
   {
   
     astronaut.velocityY = -12
