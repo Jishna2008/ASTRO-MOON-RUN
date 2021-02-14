@@ -82,6 +82,14 @@ score = score + Math.round(getFrameRate() / 60);
     touches=[];
   }
   
+  if(keyDown("down")){
+    astronaut.velocityY = 12
+  }
+  
+  if(keyDown("right")){
+ astronaut.velocityX= +12
+    
+  }
   astronaut.velocityY = astronaut.velocityY + 0.15;
   var edges = createEdgeSprites();
   astronaut.collide(edges)
